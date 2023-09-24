@@ -11,14 +11,14 @@ import {
 import styles from "./popularjobs.style";
 import { COLORS, SIZES } from "../../../constants";
 import PopularJobCard from "../../common/cards/popular/PopularJobCard";
-import useFetch from "../../../hook/useFetch";
+// import useFetch from "../../../hook/useFetch";
 
 const Popularjobs = () => {
   const router = useRouter();
-  const { data, isLoading, error } = useFetch("search", {
-    query: "React developer",
-    num_pages: "1",
-  });
+  // const { data, isLoading, error } = useFetch("search", {
+  //   query: "React developer",
+  //   num_pages: "1",
+  // });
 
   const [selectedJob, setSelectedJob] = useState();
 
@@ -35,7 +35,7 @@ const Popularjobs = () => {
           <Text style={styles.headerBtn}>Show all</Text>
         </TouchableOpacity>
       </View>
-
+{/* 
       <View style={styles.cardsContainer}>
         {isLoading ? (
           <ActivityIndicator size='large' color={COLORS.primary} />
@@ -56,7 +56,7 @@ const Popularjobs = () => {
             horizontal
           />
         )}
-      </View>
+      </View> */}
     </View>
   );
 };
