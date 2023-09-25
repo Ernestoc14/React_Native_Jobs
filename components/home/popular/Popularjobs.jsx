@@ -39,7 +39,7 @@ const Popularjobs = () => {
       </View>
 
       <View style={styles.cardsContainer}>
-        {/* {isLoading ? (
+        {isLoading ? (
           <ActivityIndicator size='large' color={COLORS.primary} />
         ) : error ? (
           <Text>Something went wrong</Text>
@@ -55,7 +55,7 @@ const Popularjobs = () => {
             contentContainerStyle={{ columnGap: SIZES.medium }}
             horizontal
           />
-        )} */}
+        )}
       </View>
     </View>
   );
